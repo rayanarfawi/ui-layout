@@ -37,4 +37,13 @@ $(document).ready(() => {
     $("main .mask").show();
     $("body").css({ overflow: "hidden" });
   });
+
+  $('.arrow').on('click',(item)=>{
+    if($(item.target).hasClass('left-arrow')){
+      console.log('left');
+    }else{
+      console.log('right'); 
+    }
+  });
+  
 });

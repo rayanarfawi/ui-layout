@@ -108,6 +108,7 @@ header.header-small .cart-icon {
 
 main {
   margin-top: 5em;
+  padding: .5em;
 }
 
 main .mask {
@@ -117,6 +118,43 @@ main .mask {
   top: 2.4em;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
+}
+
+main .featured-carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ccc;
+  height: 200px;
+  color: #000;
+  background-image: url("https://picsum.photos/1800/800/?random");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+main .featured-carousel .arrow {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .featured-carousel .items-circle {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  text-align: center;
 }
 
 .sidebar {

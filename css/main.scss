@@ -70,6 +70,7 @@ header.header-small {
 }
 main {
   margin-top: 5em;
+  padding: .5em;
   .mask {
     position: fixed;
     width: 100%;
@@ -77,6 +78,30 @@ main {
     top: 2.4em;
     left: 0;
     background: rgba(0, 0, 0, 0.5);
+  }
+
+  .featured-carousel{
+    display: flex;
+    border:1px solid #ccc;
+    height: 200px;
+    color: #000;
+    background-image: url('https://picsum.photos/1800/800/?random');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    .arrow{
+      flex-basis: 20%;
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+      justify-content: center;  
+    }
+    .items-circle{
+      align-self: flex-end; 
+      flex-basis: 60%;
+      text-align: center;
+    }
+
   }
 }
 
